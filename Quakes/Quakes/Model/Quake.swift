@@ -40,3 +40,11 @@ class Quake: NSObject, Codable {
         super.init()
     }
 }
+
+class QuakeResults: Codable {
+    let quakes: [Quake]
+    
+    enum CodingKeys: String, CodingKey {
+        case quakes = "features"
+    }
+}

@@ -10,6 +10,7 @@
 		63F0916923F5BB7D00755DCC /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916823F5BB7D00755DCC /* Quake.swift */; };
 		63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */; };
 		63F0916F23F5BF9000755DCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0916E23F5BF9000755DCC /* MapKit.framework */; };
+		63F0917023F5C9A600755DCC /* QuakeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD482541236B3C4F00FC12E9 /* QuakeDetailView.swift */; };
 		BD48251A236B3B6600FC12E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD482519236B3B6600FC12E9 /* AppDelegate.swift */; };
 		BD48251C236B3B6600FC12E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48251B236B3B6600FC12E9 /* SceneDelegate.swift */; };
 		BD482523236B3B6800FC12E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD482522236B3B6800FC12E9 /* Assets.xcassets */; };
@@ -294,6 +295,7 @@
 				63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */,
 				BD48251A236B3B6600FC12E9 /* AppDelegate.swift in Sources */,
 				63F0916923F5BB7D00755DCC /* Quake.swift in Sources */,
+				63F0917023F5C9A600755DCC /* QuakeDetailView.swift in Sources */,
 				BD48253C236B3BD500FC12E9 /* EarthquakesViewController.swift in Sources */,
 				BD48251C236B3B6600FC12E9 /* SceneDelegate.swift in Sources */,
 			);
