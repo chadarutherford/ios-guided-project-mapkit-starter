@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633C689323F5CF6600EA1B23 /* Quake+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C689223F5CF6600EA1B23 /* Quake+MKAnnotation.swift */; };
 		63F0916923F5BB7D00755DCC /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916823F5BB7D00755DCC /* Quake.swift */; };
 		63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */; };
 		63F0916F23F5BF9000755DCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0916E23F5BF9000755DCC /* MapKit.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		633C689223F5CF6600EA1B23 /* Quake+MKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+MKAnnotation.swift"; sourceTree = "<group>"; };
 		63F0916823F5BB7D00755DCC /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
 		63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeFetcher.swift; sourceTree = "<group>"; };
 		63F0916E23F5BF9000755DCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		633C689123F5CF4E00EA1B23 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				633C689223F5CF6600EA1B23 /* Quake+MKAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
 		63F0916123F5BA3700755DCC /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		63F0916523F5BA9000755DCC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				633C689123F5CF4E00EA1B23 /* Annotations */,
 				63F0916723F5BAB500755DCC /* Custom Views */,
 				63F0916423F5BA8300755DCC /* Storyboards */,
 			);
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633C689323F5CF6600EA1B23 /* Quake+MKAnnotation.swift in Sources */,
 				63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */,
 				BD48251A236B3B6600FC12E9 /* AppDelegate.swift in Sources */,
 				63F0916923F5BB7D00755DCC /* Quake.swift in Sources */,

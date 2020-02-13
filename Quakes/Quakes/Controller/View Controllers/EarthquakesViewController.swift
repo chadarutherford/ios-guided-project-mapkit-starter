@@ -22,12 +22,18 @@ class EarthquakesViewController: UIViewController {
 	}
     
     private func fetchQuakes() {
-        quakeFetcher.fetchQuakes { result in
+        quakeFetcher.fetchQuakes { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .failure(let error):
                 print("Error fetching quakes: \(error)")
             case .success(let quakes):
-                print("Quakes: \(quakes)")
+                print("Quakes: \(quakes.count)")
+                
+                // Setup MKMapView
+                DispatchQueue.main.async {
+                    self.mapView.addAnnotations(quakes)
+                }
             }
         }
     }
