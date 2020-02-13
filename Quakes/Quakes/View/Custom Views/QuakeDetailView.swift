@@ -8,22 +8,18 @@
 
 import UIKit
 
-// TODO: Create the Quake class
-// TODO: Add the QuakeDetailView to the target (Identity Inspector) to get it to build
-
 class QuakeDetailView: UIView {
     
-    // MARK: - Properties
+    // MARK: - Properties    
+    private let magnitudeLabel = UILabel()
+    private let dateLabel = UILabel()
+    private let latitudeLabel = UILabel()
+    private let longitudeLabel = UILabel()
     var quake: Quake? {
         didSet {
             updateSubviews()
         }
     }
-    
-    private let magnitudeLabel = UILabel()
-    private let dateLabel = UILabel()
-    private let latitudeLabel = UILabel()
-    private let longitudeLabel = UILabel()
     
     private lazy var dateFormatter: DateFormatter = {
         let result = DateFormatter()
@@ -67,7 +63,6 @@ class QuakeDetailView: UIView {
     }
     
     // MARK: - Private
-    
     private func updateSubviews() {
         guard let quake = quake else { return }
         let magnitude = quake.magnitude
