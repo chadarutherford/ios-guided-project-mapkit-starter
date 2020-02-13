@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63F0916923F5BB7D00755DCC /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916823F5BB7D00755DCC /* Quake.swift */; };
+		63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */; };
+		63F0916F23F5BF9000755DCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0916E23F5BF9000755DCC /* MapKit.framework */; };
 		BD48251A236B3B6600FC12E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD482519236B3B6600FC12E9 /* AppDelegate.swift */; };
 		BD48251C236B3B6600FC12E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48251B236B3B6600FC12E9 /* SceneDelegate.swift */; };
 		BD482523236B3B6800FC12E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD482522236B3B6800FC12E9 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63F0916823F5BB7D00755DCC /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeFetcher.swift; sourceTree = "<group>"; };
+		63F0916E23F5BF9000755DCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD482516236B3B6600FC12E9 /* Quakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD482519236B3B6600FC12E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD48251B236B3B6600FC12E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F0916F23F5BF9000755DCC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +70,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63F0916123F5BA3700755DCC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BD482519236B3B6600FC12E9 /* AppDelegate.swift */,
+				BD48251B236B3B6600FC12E9 /* SceneDelegate.swift */,
+				BD482522236B3B6800FC12E9 /* Assets.xcassets */,
+				BD482527236B3B6800FC12E9 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		63F0916223F5BA6E00755DCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63F0916A23F5BB8400755DCC /* Model Controllers */,
+				63F0916323F5BA7500755DCC /* View Controllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63F0916323F5BA7500755DCC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD48253B236B3BD500FC12E9 /* EarthquakesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		63F0916423F5BA8300755DCC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DDD1A23993CB100CA2A91 /* Main.storyboard */,
+				BD482524236B3B6800FC12E9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		63F0916523F5BA9000755DCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63F0916723F5BAB500755DCC /* Custom Views */,
+				63F0916423F5BA8300755DCC /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63F0916623F5BA9A00755DCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63F0916823F5BB7D00755DCC /* Quake.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63F0916723F5BAB500755DCC /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD482541236B3C4F00FC12E9 /* QuakeDetailView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		63F0916A23F5BB8400755DCC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63F0916B23F5BB9100755DCC /* QuakeFetcher.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		63F0916D23F5BF9000755DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F0916E23F5BF9000755DCC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD48250D236B3B6600FC12E9 = {
 			isa = PBXGroup;
 			children = (
 				BD482518236B3B6600FC12E9 /* Quakes */,
 				BD48252F236B3B6800FC12E9 /* QuakesTests */,
 				BD482517236B3B6600FC12E9 /* Products */,
+				63F0916D23F5BF9000755DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,14 +170,10 @@
 		BD482518236B3B6600FC12E9 /* Quakes */ = {
 			isa = PBXGroup;
 			children = (
-				BD482519236B3B6600FC12E9 /* AppDelegate.swift */,
-				BD48251B236B3B6600FC12E9 /* SceneDelegate.swift */,
-				BD48253B236B3BD500FC12E9 /* EarthquakesViewController.swift */,
-				BD482541236B3C4F00FC12E9 /* QuakeDetailView.swift */,
-				BD6DDD1A23993CB100CA2A91 /* Main.storyboard */,
-				BD482522236B3B6800FC12E9 /* Assets.xcassets */,
-				BD482524236B3B6800FC12E9 /* LaunchScreen.storyboard */,
-				BD482527236B3B6800FC12E9 /* Info.plist */,
+				63F0916623F5BA9A00755DCC /* Model */,
+				63F0916523F5BA9000755DCC /* View */,
+				63F0916223F5BA6E00755DCC /* Controller */,
+				63F0916123F5BA3700755DCC /* Support */,
 			);
 			path = Quakes;
 			sourceTree = "<group>";
@@ -209,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F0916C23F5BB9100755DCC /* QuakeFetcher.swift in Sources */,
 				BD48251A236B3B6600FC12E9 /* AppDelegate.swift in Sources */,
+				63F0916923F5BB7D00755DCC /* Quake.swift in Sources */,
 				BD48253C236B3BD500FC12E9 /* EarthquakesViewController.swift in Sources */,
 				BD48251C236B3B6600FC12E9 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = Quakes/Info.plist;
+				INFOPLIST_FILE = Quakes/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = Quakes/Info.plist;
+				INFOPLIST_FILE = Quakes/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
